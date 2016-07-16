@@ -37,3 +37,38 @@
 其中：“ <ProjectItem ReplaceParameters="true">LuaFile1.lua</ProjectItem>”这一行是我们要加进去的（LuaFile.lua是我们导出模版时候的文件名）
 
 修改好之后，保存到压缩文件中，就看到该有的模版起效果了
+
+比如说我们的模版是：
+--$username$
+function $itemname$:Sth(args)
+   print(args)
+end
+$safeitemrootname$
+
+
+我们在新建项创建一个hell.lua的文件的内容就自动变成：
+--Administrator
+function hell:Sth(args)
+   print(args)
+end
+hell
+
+总之就是根据需求自己订制吧：
+
+顺便，复制一份常用变量名：
+参数  描述
+clrversion    公共语言运行时 (CLR) 的当前版本。
+GUID [1-10]   用于替换项目文件中的项目 GUID 的 GUID。 最多可以指定 10 个唯一的 GUID（例如，guid1)）。
+itemname      用户在添加新项对话框中提供的名称。
+machinename   当前的计算机名称（例如，Computer01）。
+projectname   用户在新建项目对话框中提供的名称。
+registeredorganization  HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization 中的注册表项值。
+rootnamespace 当前项目的根命名空间。 此参数仅适用于项目模板。
+safeitemname  用户在“添加新项”对话框中提供的名称，名称中移除了所有不安全的字符和空格。
+safeprojectname 用户在“新建项目”对话框中提供的名称，名称中移除了所有不安全的字符和空格。
+time          以 DD/MM/YYYY 00:00:00 格式表示的当前时间。
+SpecificSolutionName 解决方案的名称。 当“创建解决方案的目录”被选中，SpecificSolutionName 具有解决方案的名称。 当“创建解决方案的目录”没有被选中，SpecificSolutionName是空。
+userdomain    当前的用户域。
+username      当前的用户名。
+webnamespace  当前网站的名称。 在 Web 窗体模板中使用此参数以确保类名称是唯一的。 如果网站位于 Web 服务器的根目录下，则此模板参数将解析为 Web 服务器的根目录。
+year          以 YYYY 格式表示的当前年份。
