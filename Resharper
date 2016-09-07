@@ -1,2 +1,4 @@
 Resharper 安装后没有在VS中显示字体和颜色配置的解决方案：
 https://resharper-support.jetbrains.com/hc/en-us/articles/206546479-ReSharper-Fonts-Colors-settings-do-not-appear-in-Visual-Studio-after-installation
+
+配色风格根本没有起效：try this:   enable Resharper coloring from "Resharper|Options|Code Inspection|Settings|Color identifiers".
