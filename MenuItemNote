@@ -1,0 +1,12 @@
+Unity MenuItem
+
+Special Paths
+As seen, the path passed to the MenuItem attribute controls under which top level menu the new item will be placed.
+
+Unity has a few “special” paths that act as context menus (menus that are accessible using right-click):
+
+Assets – items will be available under the “Assets” menu, as well using right-click inside the project view.
+
+Assets/Create – items will be listed when clicking on the “Create” button in the project view (useful when adding new types that can be added to the project)
+
+CONTEXT/ComponentName – items will be available by right-clicking inside the inspector of the given component.
