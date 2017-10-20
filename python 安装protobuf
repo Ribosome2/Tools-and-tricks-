@@ -1,0 +1,21 @@
+Microsoft Windows [版本 10.0.15063]
+(c) 2017 Microsoft Corporation。保留所有权利。
+
+C:\Users\111>pip list
+You are using pip version 7.0.1, however version 9.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+pip (7.0.1)
+setuptools (16.0)
+
+C:\Users\111>pip install protobuf==2.4.1
+You are using pip version 7.0.1, however version 9.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting protobuf==2.4.1
+  Downloading protobuf-2.4.1.tar.gz (56kB)
+    100% |████████████████████████████████| 57kB 144kB/s
+Requirement already satisfied (use --upgrade to upgrade): setuptools in c:\python27\lib\site-packages (from protobuf==2.4.1)
+Installing collected packages: protobuf
+  Running setup.py install for protobuf
+Successfully installed protobuf-2.4.1
+
+C:\Users\111>
